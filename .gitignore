@@ -1,0 +1,10 @@
+*.swp
+*.txt
+*.out
+*.log
+pass.secret
+__pychache__/
+*.pyc
+build/
+configparse_wrapper/
+static/bootstrap/
