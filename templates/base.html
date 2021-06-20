@@ -9,19 +9,55 @@
         
         {% include 'navbar.html' %}
 
-        <!-- paralax  --> 
+        <!-- paralax  -->
+		{{ paralax_partial | safe }}
 
         <!-- steam link -->
 
         <!-- Trailer  -->
+		<video width="320" height="240" controls>
+			<source src="{{ trailer_url }}" type="video/mp4">
+			Unsupported by browser.
+		</video> 
 
         <!-- Short Description -->
+		<h2>
+			{{ short_description }}
+		</h2>
         <!-- Long Description -->
+		<div class="row">
+			<div class="col">
+				{{ long_description_left_col }}
+			</div>
+			<div class="col">
+				{{ long_description_right_col }}
+			</div>
+		</div>
 
         <!-- 4 pictures -->
+		<div>
+			<div class="row">
+				<div class="col">
+					 {{ picture_1 }}
+				</div>
+				<div class="col">
+					 {{ picture_2 }}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					 {{ picture_3 }}
+				</div>
+				<div class="col">
+					 {{ picture_4 }}
+				</div>
+			</div>
+		</div>
 
         <!-- quote from mark -->
-        <!-- "Out of the places I've been, I guess this is where I'm just not going to leave." -->
+        <h1>
+		Out of the places I've been, this, here, this is where you should truely abbandon all hope...
+		</h1>
 
         {% include 'footer.html' %}
     </body>
