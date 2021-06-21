@@ -3,7 +3,7 @@
     <head>
         {% include "default_head_content.html" %}
     </head>
-    <body style="overflow: hidden !important;">
+    <body style="overflow: hidden !important; background-color: black;">
         
         {% include 'navbar.html' %}
         <div class="parallax">
@@ -20,6 +20,7 @@
                     style="margin-top: 80vh; background-image: url({{ config['BG_SECTION_2'] }})">
                         <!--<img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][0] }}">-->
                     <img style="width: 100%;" src="{{ config['BG_SECTION_2'] }}">
+                    <div class="spacer"></div>
                     <div class="pos-abs-with-offset">
                         <div class="steam-info">
                             Wishlist on Steam
@@ -36,10 +37,10 @@
                         <!-- Long Description -->
 		                <div class="row limit-row">
 		                	<div class="col-md limit-col mt-3">
-		                		{{ config["LONG_DESCRIPTION_LEFT_COL"] }}
+		                		{{ config["LONG_DESCRIPTION_LEFT_COL"] | safe}}
 		                	</div>
 		                	<div class="col-md limit-col mt-3">
-		                		{{ config["LONG_DESCRIPTION_RIGHT_COL"] }}
+		                		{{ config["LONG_DESCRIPTION_RIGHT_COL"] | safe }}
 		                	</div>
 		                </div>
 
