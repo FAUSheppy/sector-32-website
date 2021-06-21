@@ -14,9 +14,9 @@
 }
 
 .steam-info{
-    background-color: green;
+    background-color: #d2efa9;
     width: 50%;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -26,6 +26,7 @@
     font-width: bold;
     font-size: 25px;
     text-align: center;
+    text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.3 );
 }
 
 .quater-img{
@@ -53,6 +54,19 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.footer-in-paralax{
+    width: 100%;
+    margin-bottom: 200px;
+    color: orange;
+    font-size: 15;
+    text-align: center;
+}
+
+.footer-link{
+    display: block;
 }
 
 .limit-row{
@@ -60,6 +74,8 @@
     border-radius: 5px;
     background-color: rgba(1,1,1,0.4);
     color: orange;
+    margin: auto !important;
+    display: block;
 }
 
 .title{
