@@ -1,64 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Sector 32</title>
-        <meta name="Description" content="Decent into Sector 32 is a 3rd person flying narrative game set in the far future.">
         {% include "default_head_content.html" %}
     </head>
-    <body class="bg-special">
+    <body style="overflow: hidden !important;">
         
         {% include 'navbar.html' %}
+        <div class="parallax">
+            
+            <!-- header picture -->
+            <div class="parallax__group" style="min-height: 80vh">
+                <div class="parallax__layer parallax__layer__deep">
+                        <img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][4] }}">
+                </div>
+                <div class="parallax__layer parallax__layer__back">
+                        <img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][1] }}">
+                </div>
+                <div class="parallax__layer parallax__layer__base" 
+                    style="margin-top: 80vh; background-image: url({{ config['BG_SECTION_2'] }})">
+                        <!--<img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][0] }}">-->
+                    <img style="width: 100%;" src="{{ config['BG_SECTION_2'] }}">
+                    <div class="pos-abs-with-offset">
+                        <div class="steam-info">
+                            Wishlist on Steam
+                        </div>
 
-        <!-- paralax  -->
-		{{ paralax_partial | safe }}
+		                <video controls height="480" style="display: block; margin: auto;">
+                        <source src="{{ config['TRAILER_URL'] }}" type="{{ config['VIDEO_FORMAT'] }}">
+		                	Unsupported by browser.
+		                </video> 
+                        <!-- Short Description -->
+		                <div class="title boxxed">
+		                	{{ config["SHORT_DESCRIPTION"] }}
+		                </div>
+                        <!-- Long Description -->
+		                <div class="row limit-row">
+		                	<div class="col-md limit-col mt-3">
+		                		{{ config["LONG_DESCRIPTION_LEFT_COL"] }}
+		                	</div>
+		                	<div class="col-md limit-col mt-3">
+		                		{{ config["LONG_DESCRIPTION_RIGHT_COL"] }}
+		                	</div>
+		                </div>
 
-        <!-- steam link -->
+		    	        <div class="row">
+		    	        	<div class="col">
+                                    <img class="quater-img left-side-img" src='{{ config["PICTURE_1"] }}'>
+		    	        	</div>
+		    	        	<div class="col">
+                                    <img class="quater-img right-side-img" src='{{ config["PICTURE_2"] }}'>
+		    	        	</div>
+		    	        </div>
+		    	        <div class="row">
+		    	        	<div class="col">
+                                    <img class="quater-img left-side-img" src='{{ config["PICTURE_3"] }}'>
+		    	        	</div>
+		    	        	<div class="col">
+                                    <img class="quater-img right-side-img" src='{{ config["PICTURE_4"] }}'>
+		    	        	</div>
+		    	        </div>
 
-        <!-- Trailer  -->
-		<video width="320" height="240" controls>
-			<source src="{{ trailer_url }}" type="video/mp4">
-			Unsupported by browser.
-		</video> 
+                        <div class="row">
+                            <!-- quote from mark -->
+                            <div class="quote">
+                                    {{ config["QUOTE"] }}
+		                    </div>
+                        </div>
 
-        <!-- Short Description -->
-		<h2>
-			{{ short_description }}
-		</h2>
-        <!-- Long Description -->
-		<div class="row">
-			<div class="col">
-				{{ long_description_left_col }}
-			</div>
-			<div class="col">
-				{{ long_description_right_col }}
-			</div>
-		</div>
+                        <div class="footer-in-paralax">
+                            <a style="color: rgba(255,255,255,.5);"
+                                class="footerLink" href="https://potaris.de/impressum">
+                                    Impressum/Legal</a>
+                        </div>
 
-        <!-- 4 pictures -->
-		<div>
-			<div class="row">
-				<div class="col">
-					 {{ picture_1 }}
-				</div>
-				<div class="col">
-					 {{ picture_2 }}
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					 {{ picture_3 }}
-				</div>
-				<div class="col">
-					 {{ picture_4 }}
-				</div>
-			</div>
-		</div>
+                    <!-- abs pos container end -->
+                    </div>
 
-        <!-- quote from mark -->
-        <h1>
-		Out of the places I've been, this, here, this is where you should truely abbandon all hope...
-		</h1>
+                <!-- paralax base layer end -->
+                </div>
+            
+            <!-- paralax group  end -->
+            </div>
 
-        {% include 'footer.html' %}
+        <!-- paralax container end -->
+        </div>
     </body>
 </html>

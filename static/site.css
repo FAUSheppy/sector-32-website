@@ -1,0 +1,106 @@
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin-x: 100%;
+  scrollbar-width: none;
+  --webkit-scrollbar: none;
+}
+
+.pos-abs-with-offset{
+    position: absolute;
+    top: 50px;
+}
+
+.steam-info{
+    background-color: green;
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
+    font-color: white;
+    font-width: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.quater-img{
+    width: 300px;
+    display: block;
+    margin-top: 30px;
+}
+
+.boxxed{
+    background-color: rgba(1,1,1,0.4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    color: orange;
+}
+
+.quote{
+    font-size: 30px;
+    width: 80%;
+    font-family: Veranda;
+    color: orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.limit-row{
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgba(1,1,1,0.4);
+    color: orange;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.right-side-img{
+    float: left;
+    margin-left: 30px;
+}
+
+.left-side-img{
+    float: right;
+    margin-left: 30px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+    transform-origin-x: 100%;
+}
+
+/* 1 + (translateZ * -1) / perspective */
+/* higher translateZ = slower scroll speed */
+
+.parallax__layer__base {
+  transform: translateZ(0);
+}
+.parallax__layer__back {
+    transform: translateZ(-1px) scale(2);
+}
+.parallax__layer__deep {
+  transform: translateZ(-2px) scale(3);
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  margin-top: -5px;
+}

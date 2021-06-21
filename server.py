@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import flask
-from flask.ext.scss
 import requests
 import argparse
 import datetime
@@ -12,8 +11,7 @@ app = flask.Flask("Sector 32 Web")
 
 @app.route('/')
 def leaderboard():
-    finalResponse = flask.render_template("base.html")
-    return finalResponse
+    return flask.render_template("base.html", config=app.config)
 
 @app.route('/static/<path:path>')
 def send_js(path):
@@ -33,7 +31,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     
-    flask.ext.scss.Scss(app)
     app.config.from_object("config")
 
     app.config["TEMPLATES_AUTO_RELOAD"] = True
