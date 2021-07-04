@@ -1,10 +1,11 @@
 # parallax layers front to back as URLs #
 PARALAX_LAYERS = [
-                "https://images.potaris.de/media/Layer_0_edited.png?",
-                "https://images.potaris.de/media/Layer_1_editor.png?",
-                "https://images.potaris.de/media/Layer_2_edited.png?",
-                "https://images.potaris.de/media/Layer_4_edited.png?",
-                "https://images.potaris.de/media/Layer_5.png?"]
+                "https://images.potaris.de/media/layering/L0_Astroid_alpha.png",
+                #"https://images.potaris.de/media/layering/L0_ship.png",
+                "https://images.potaris.de/media/layering/L1_no_fog_alpha.png",
+                "https://images.potaris.de/media/layering/L2_no_fog_alpha.png",
+                "https://images.potaris.de/media/layering/L3_no_fog_alpha.png",
+                "https://images.potaris.de/media/layering/L4_with_fog.png"]
 
 BG_SECTION_2 = "https://images.potaris.de/media/crystal-sector.png"
 
