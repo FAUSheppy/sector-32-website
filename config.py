@@ -2,9 +2,9 @@
 PARALAX_LAYERS = [
                 "https://images.potaris.de/media/layering/L0_Astroid_alpha.png",
                 #"https://images.potaris.de/media/layering/L0_ship.png",
-                "https://images.potaris.de/media/layering/L1_no_fog_alpha.png",
-                "https://images.potaris.de/media/layering/L2_no_fog_alpha.png",
-                "https://images.potaris.de/media/layering/L3_no_fog_alpha.png",
+                "https://images.potaris.de/media/layering/L1_with_fog_alpha.png",
+                "https://images.potaris.de/media/layering/L2_with_fog_alpha.png",
+                "https://images.potaris.de/media/layering/L3_with_fog_alpha.png",
                 "https://images.potaris.de/media/layering/L4_with_fog.png"]
 
 BG_SECTION_2 = "https://images.potaris.de/media/crystal-sector.png"
