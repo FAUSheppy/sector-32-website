@@ -5,7 +5,7 @@
     </head>
     <body style="overflow: hidden !important; background-color: black;">
         
-        {% include 'navbar.html' %}
+        <!-- {% include 'navbar.html' %} -->
         <div class="parallax">
             
             <!-- header picture -->
@@ -22,8 +22,15 @@
                 <div class="parallax__layer parallax__layer__5">
                         <img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][4] }}">
                 </div>
+                <div class="parallax-title" id="parallax-title">
+                        {{ config["SITE_PARRALAX_TITLE"] }} <br>
+                        <div class="parallax-subtitle">
+                            {{ config["SITE_PARRALAX_SUBTITLE"] }}
+                        </div>
+                </div>
                 <div class="parallax__layer parallax__layer__front" 
-                    style="margin-top: 80vh; background-image: url({{ config['BG_SECTION_2'] }})">
+                    style="margin-top: 80vh; background-image: url({{ config['BG_SECTION_2'] }})"
+                    id="bg-section-2">
                         <!--<img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][0] }}">-->
                     <img style="width: 100%;" src="{{ config['BG_SECTION_2'] }}">
                     <div class="spacer"></div>
@@ -124,4 +131,21 @@
         <!-- paralax container end -->
         </div>
     </body>
+    <script>
+        function fixHeight(){
+            longImg = document.getElementById("bg-section-2")
+            title   = document.getElementById("parallax-title")
+            /* base margin for 1:1 screen ratio */
+            baseMarginUnit = "vh"
+            baseMargin = 35
+    
+            scaleFactor = 0.88
+
+            computedMargin = baseMargin * ( (window.innerWidth/window.innerHeight) * scaleFactor)
+            longImg.style.marginTop = computedMargin + baseMarginUnit;
+            title.style.marginTop = computedMargin / 2 + baseMarginUnit;
+        }
+        fixHeight()
+        window.onresize = fixHeight;
+    </script>
 </html>

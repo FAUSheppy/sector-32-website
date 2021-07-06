@@ -7,7 +7,10 @@ PARALAX_LAYERS = [
                 "https://images.potaris.de/media/layering/L3_with_fog_alpha.png",
                 "https://images.potaris.de/media/layering/L4_with_fog.png"]
 
-BG_SECTION_2 = "https://images.potaris.de/media/crystal-sector.png"
+SITE_PARRALAX_TITLE = "Decent into Sector 32"
+SITE_PARRALAX_SUBTITLE = ""
+
+BG_SECTION_2 = "https://images.potaris.de/media/crystal-sector-no-astroid-header.png"
 
 # trailer as youtube link #
 TRAILER_URL="https://m.athq.de/ts-upload/yir_on_tilt.webm"
