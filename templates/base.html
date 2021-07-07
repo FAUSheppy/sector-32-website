@@ -35,11 +35,14 @@
                     <img style="width: 100%;" src="{{ config['BG_SECTION_2'] }}">
                     <div class="spacer"></div>
                     <div class="pos-abs-with-offset">
-                        <img class="steam-placeholder" alt="Wishlist on Steam" src="https://images.potaris.de/media/steam-store-example.png">
+                        <img class="steam-placeholder" alt="Wishlist on Steam" 
+                            src="https://images.potaris.de/media/steam-store-example.png">
                         </img>
 
-		                <video controls height="480" style="display: block; margin: auto;">
-                        <source src="{{ config['TRAILER_URL'] }}" type="{{ config['VIDEO_FORMAT'] }}">
+		                <video class="video" controls
+                                        style="display: block; margin: auto;">
+                        <source src="{{ config['TRAILER_URL'] }}" 
+                                type="{{ config['VIDEO_FORMAT'] }}">
 		                	Unsupported by browser.
 		                </video> 
                         <!-- Short Description -->
@@ -77,16 +80,16 @@
                         <div class="choices-container">
                             <div class="title boxxed short-text">
                                     {{ config["CHOICES_SHORT_TEXT"] }}
-                                    <div class="row">
-		    	            	        <div class="col">
-                                            <img class="big-img quater-img left-side-img" 
-                                                src='{{ config["CHOICES_PICTURE"] }}'>
-                                        </div>
-		    	            	        <div class="col">
-                                            <img class="big-img quater-img right-side-img" 
-                                                src='{{ config["CHOICES_PICTURE"] }}'>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="row">
+		    	                <div class="col">
+                                    <img class="big-img quater-img left-side-img" 
+                                        src='{{ config["CHOICES_PICTURE"] }}'>
+                                </div>
+		    	                <div class="col">
+                                    <img class="big-img quater-img right-side-img" 
+                                        src='{{ config["CHOICES_PICTURE"] }}'>
+                                </div>
                             </div>
                         <div>
 
