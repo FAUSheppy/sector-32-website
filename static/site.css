@@ -164,7 +164,7 @@
 .parallax-title{
     position: absolute;
     z-index: 100;
-    font-size: 40px;
+    font-size: 5vw;
     color: white;
     margin-top: 30vh;
     margin-left: auto;
@@ -176,4 +176,10 @@
 
 .parallax-subtitle{
 
+}
+
+@media(ma-width: 1000px){
+    .parallax-title{
+        font-size: 40px;
+    }
 }
