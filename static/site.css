@@ -183,6 +183,13 @@
 }
 
 @media(max-width: 874px){
+    .hide-on-small{
+	display: none !important;
+    }
+
+    .steam-placeholder{
+	width: 90%;
+    }
     .parallax-title{
         font-size: 40px;
     }
@@ -201,6 +208,7 @@
     }
     .boxxed{
         width: 90%;
+	margin-left
         text-align: center;
     }
     .video{

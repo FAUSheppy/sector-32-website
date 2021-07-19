@@ -29,8 +29,7 @@
                         </div>
                 </div>
                 <div class="parallax__layer parallax__layer__front" 
-                    style="margin-top: 80vh; background-image: url({{ config['BG_SECTION_2'] }})"
-                    id="bg-section-2">
+                    style="margin-top: 80vh;" id="bg-section-2">
                         <!--<img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][0] }}">-->
                     <img style="width: 100%;" src="{{ config['BG_SECTION_2'] }}">
                     <div class="spacer"></div>
@@ -50,7 +49,7 @@
 		                	{{ config["SHORT_DESCRIPTION"] }}
 		                </div>
                         <!-- Long Description -->
-		                <div class="row limit-row">
+		                <div class="row limit-row hide-on-small">
 		                	<div class="col-md limit-col mt-3">
 		                		{{ config["LONG_DESCRIPTION_LEFT_COL"] | safe}}
 		                	</div>
