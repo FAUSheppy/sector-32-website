@@ -26,7 +26,7 @@ LONG_DESCRIPTION_RIGHT_COL = '''
 Out here, ships disappear every day. Most of them are never looked for - if you get lost, you <i> are </i> lost. But, today, somebody seems to be in luck, because your carrier has been dispatch to investigate an unusually large ship detected in the outer rings of the giant nebula at nearby sector 32. An area notorious for the amount of ships going missing there.
 '''
 
-PICTURE_1 = "https://images.potaris.de/media/may-20-tunnel.jpg?x=300&encoding=webp"
+PICTURE_1 = "https://images.potaris.de/media/scan-with-target.png?x=300&encoding=webp"
 PICTURE_2 = "https://images.potaris.de/media/april-25-shield.jpg?x=300&encoding=webp"
 PICTURE_3 = "https://images.potaris.de/media/ship-found.png?x=300&encoding=webp"
 PICTURE_4 = "https://images.potaris.de/media/bright-sector.png?x=300&encoding=webp"
