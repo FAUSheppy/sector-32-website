@@ -34,11 +34,13 @@ PICTURE_4 = "https://images.potaris.de/media/bright-sector.png?x=300&encoding=we
 QUOTE = "Out of the places I've been, this, here, this is where you should truly abandon all hope..."
 
 CHOICES_SHORT_TEXT = "Choose your answers wisely but also pay attention to your surroundings. Following your veteran comrades may get you the end they want - but I may also leave those they don't care about out there to die."
-CHOICES_PICTURE = "https://images.potaris.de/media/ui-example.png?x=300&encoding=webp"
+CHOICES_PICTURE_1 = "https://images.potaris.de/media/ui-example.png?x=300&encoding=webp"
+CHOICES_PICTURE_2 = "https://images.potaris.de/media/ue-flak-1.png?x=300&encoding=webp"
+CHOICES_SECTION_BG = "https://images.potaris.de/media/ue-what-is-real-sector.png?encoding=webp"
 
 EXPLORE_THE_FIELD_TEXT = "Find countless secrets in the field, uncover the hidden messages from those who got lost before you - but be careful, you can't trust everything your see. "
-EXPLORE_PIC_1 = "https://images.potaris.de/media/ship-found.png?x=300&encoding=webp"
-EXPLORE_PIC_2 = "https://images.potaris.de/media/ship-found.png?x=300&encoding=webp"
+EXPLORE_PIC_1 = "https://images.potaris.de/media/ue-flak-2.png?x=300&encoding=webp"
+EXPLORE_PIC_2 = "https://images.potaris.de/media/ue-blue-white-field.png?encoding=webp"
 
 SURVIVAL_TEXT = "Take care of your ship and preserve your equipment. Damage to your ship or a wasted missle might come back to haunt you later."
 SURVIVAL_PIC_1 = ""

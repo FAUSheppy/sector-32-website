@@ -19,8 +19,9 @@
                 <div class="parallax__layer parallax__layer__3">
                         <img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][3] }}">
                 </div>
-                <div class="parallax__layer parallax__layer__5">
+                <div style="max-height: 100vh; overflow-y: hidden;" class="parallax__layer parallax__layer__5">
                         <img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][4] }}">
+                        <img class="small-display-only" style="width: 100%;" src="{{ config['PARALAX_LAYERS'][4] }}">
                 </div>
                 <div class="parallax-title" id="parallax-title">
                         {{ config["SITE_PARRALAX_TITLE"] }} <br>
@@ -66,7 +67,7 @@
                                     <img class="quater-img right-side-img" src='{{ config["PICTURE_2"] }}'>
 		    	        	</div>
 		    	        </div>
-		    	        <div class="row">
+		    	        <div class="row pb-5">
 		    	        	<div class="col">
                                     <img class="quater-img left-side-img" src='{{ config["PICTURE_3"] }}'>
 		    	        	</div>
@@ -76,18 +77,18 @@
 		    	        </div>
 
                         <!-- choices showcase -->
-                        <div class="choices-container">
+                        <div style="background-image: url({{ config['CHOICES_SECTION_BG'] }});" class="choices-container py-5">
                             <div class="title boxxed short-text">
                                     {{ config["CHOICES_SHORT_TEXT"] }}
                             </div>
                             <div class="row">
 		    	                <div class="col">
                                     <img class="big-img quater-img left-side-img" 
-                                        src='{{ config["CHOICES_PICTURE"] }}'>
+                                        src='{{ config["CHOICES_PICTURE_1"] }}'>
                                 </div>
 		    	                <div class="col">
                                     <img class="big-img quater-img right-side-img" 
-                                        src='{{ config["CHOICES_PICTURE"] }}'>
+                                        src='{{ config["CHOICES_PICTURE_2"] }}'>
                                 </div>
                             </div>
                         <div>
@@ -112,13 +113,13 @@
                         <div class="row">
                             <!-- quote from mark -->
                             <div class="quote">
-                                    {{ config["QUOTE"] }}
+                                    {{ config["SURVIVAL_TEXT"] }}
 		                    </div>
                         </div>
 
                         <div class="footer-in-paralax">
                             <a style="color: rgba(255,255,255,.5);" 
-                                    href="https://potaris.de/impressum">Privacy & Legal</a>
+                                    href="https://potaris.de/en/impressum">Privacy & Legal</a>
                         </div>
 
                     <!-- abs pos container end -->

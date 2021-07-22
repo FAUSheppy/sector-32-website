@@ -64,7 +64,7 @@
 
 .spacer{
     height: 20vw;
-    background-color: black;
+    background-color: rgba(0,0,0,0);
 }
 
 .quote{
@@ -82,7 +82,7 @@
 
 .footer-in-paralax{
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
     color: orange;
     font-size: 15;
     text-align: center;
@@ -145,13 +145,13 @@
   transform: translateZ(-2px) scale(3);
 }
 .parallax__layer__3 {
-  transform: translateZ(-3px) scale(4);
+  transform: translateZ(-5px) scale(6);
 }
 .parallax__layer__4 {
-  transform: translateZ(-4px) scale(5);
+  transform: translateZ(-8px) scale(9);
 }
 .parallax__layer__5 {
-  transform: translateZ(-5px) scale(6);
+  transform: translateZ(-200px) scale(201);
 }
 
 .parallax__group {
@@ -178,13 +178,26 @@
 
 }
 
+.choices-container{
+    background-size: cover;
+}
+
 .video{
     height: 480px;
 }
 
+
+.small-display-only{
+    display: none;
+}
+
 @media(max-width: 874px){
     .hide-on-small{
-	display: none !important;
+	    display: none !important;
+    }
+
+    .small-display-only{
+        display: unset;
     }
 
     .steam-placeholder{
@@ -202,13 +215,11 @@
         margin-left: unset;
     }
     .choices-container{
-        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
     .boxxed{
         width: 90%;
-	margin-left
         text-align: center;
     }
     .video{
