@@ -20,6 +20,7 @@ def send_js(path):
 
 @app.before_first_request
 def init():
+    app.config.from_object("config")
     params = "?x=1920&y=1080&encoding=webp"
     for i in range(0, len(app.config["PARALAX_LAYERS"])):
         app.config["PARALAX_LAYERS"][i] = app.config["PARALAX_LAYERS"][i] + params
