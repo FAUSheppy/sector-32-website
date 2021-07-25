@@ -3,7 +3,7 @@
     <head>
         {% include "default_head_content.html" %}
     </head>
-    <body style="overflow: hidden !important; background-color: black;">
+    <body>
         
         <!-- {% include 'navbar.html' %} -->
         <div class="parallax">
@@ -19,9 +19,16 @@
                 <div class="parallax__layer parallax__layer__3">
                         <img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][3] }}">
                 </div>
-                <div style="max-height: 100vh; overflow-y: hidden;" class="parallax__layer parallax__layer__5">
-                        <img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][4] }}">
-                        <img class="small-display-only" style="width: 100%;" src="{{ config['PARALAX_LAYERS'][4] }}">
+                <div style="max-height: 100vh; overflow-y: hidden;"
+			class="parallax__layer parallax__layer__5">
+                        <img style="width: 100%;
+      			-webkit-mask-image:-webkit-gradient(linear, to bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)) 95%);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0) 95%);"
+			src="{{ config['PARALAX_LAYERS'][4] }}">
+
+			<!-- small display helper -->
+                        <img class="small-display-only" style="width: 100%;" 
+				src="{{ config['PARALAX_LAYERS'][4] }}">
                 </div>
                 <div class="parallax-title" id="parallax-title">
                         {{ config["SITE_PARRALAX_TITLE"] }} <br>
@@ -32,7 +39,8 @@
                 <div class="parallax__layer parallax__layer__front" 
                     style="margin-top: 80vh;" id="bg-section-2">
                         <!--<img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][0] }}">-->
-                    <img style="width: 100%;" src="{{ config['BG_SECTION_2'] }}">
+                    <img class="high-res-fixer" 
+		    	style="width: 100%;" src="{{ config['BG_SECTION_2'] }}">
                     <div class="spacer"></div>
                     <div class="pos-abs-with-offset">
                         <!--
@@ -43,7 +51,7 @@
                         <div class="discord-position-container">
                             <div class="discord-invite">
                                 <div class="discord-invite-default-text">
-                                Stay up to date - Join our discord!
+                                Stay up to date - Join the Discord!
                                 </div>
                                 <div class="discord-community-name">
                                 Decend into Sector 32
