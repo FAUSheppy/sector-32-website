@@ -13,8 +13,8 @@ SITE_PARRALAX_SUBTITLE = ""
 BG_SECTION_2 = "https://images.potaris.de/media/crystal-sector-no-astroid-header.png?encoding=webp&y=1080"
 
 # trailer as youtube link #
-TRAILER_URL="https://m.athq.de/ts-upload/yir_on_tilt.webm"
-VIDEO_ENCODING = "video/webm"
+TRAILER_URL="https://m.athq.de/webgl/cap_sample.mp4"
+VIDEO_ENCODING = "video/mp4"
 
 SHORT_DESCRIPTION = "Decent into Sector 32 is a decision-based mystery game, set in the far future. Jump into your ship and decent into  the increasingly dark and hostile environment of Sector 32."
 
