@@ -16,6 +16,17 @@
 .pos-abs-with-offset{
     position: absolute;
     top: 50px;
+    width: 100%;
+}
+
+.discord-position-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    
+    width: 400px;
+    display: block;
 }
 
 .steam-placeholder{
@@ -174,7 +185,8 @@
 }
 
 .parallax-subtitle{
-
+    font-size: 3vw;
+    font-family: CGFOff-Road;
 }
 
 .choices-container{
@@ -195,7 +207,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
+  
 @media(max-width: 874px){
     .img-double-size{
 	max-width: 90%;
@@ -234,5 +246,73 @@
     .video{
         width: 90%;
         height: unset;
+    }
+
+    .parallax-subtitle{
+        font-size: 30px;
+    }
+
+}
+
+
+.discord-invite{
+    background-color: rgba(47, 49, 54, 0.8);
+    width: 400px;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.discord-invite-default-text{
+    color: #b9bbbe;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+
+.discord-server-picture{
+    position: relative;
+    top: 30px;
+    left: 30px; 
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-image: url("https://images.potaris.de/media/CrystalSectorFirstLook.png?x=100");
+}
+
+.discord-community-name{
+    position: relative;
+    top: 60px;
+    left: 150px;
+    color: white;
+}
+
+.discord-join-button{
+    position: relative;
+    top: -15px;
+    left: 150px;
+    width: 220px;
+    height: 40px;
+    background-color: #3ba55c;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.discord-join-button:hover{
+    opacity: 0.8;
+    text-decoration: none !important;
+}
+
+.discord-join-button-text{
+    text-align: center;
+    padding-top: 7px;
+    color: white !important;
+}
+
+
+@media(max-width: 1600px){
+    .discord-position-container{
+        margin-top: 0px;
     }
 }
