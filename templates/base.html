@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
         {% include "default_head_content.html" %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
     </head>
     <body>
         
@@ -66,18 +69,18 @@
                             </div>
                         </div>
 
-		                <video class="video" controls
-                                        style="display: block; margin: auto;">
-                        <source src="{{ config['TRAILER_URL'] }}" 
-                                type="{{ config['VIDEO_FORMAT'] }}">
-		                	Unsupported by browser.
-		                </video> 
                         <!-- Short Description -->
 		                <div class="title boxxed">
 		                	{{ config["SHORT_DESCRIPTION"] }}
 		                </div>
+		                <video class="video" controls
+                                        style="display: block; margin: auto;">
+                        <source src="{{ config['TRAILER_URL'] }}" 
+                                type="{{ config['VIDEO_ENCODING'] }}">
+		                	Unsupported by browser.
+		                </video> 
                         <!-- Long Description -->
-		                <div class="row limit-row hide-on-small">
+		                <div class="row limit-row mt-3 hide-on-small">
 		                	<div class="col-md limit-col mt-3">
 		                		{{ config["LONG_DESCRIPTION_LEFT_COL"] | safe}}
 		                	</div>
@@ -139,7 +142,7 @@
 
                         <div class="row">
                             <!-- quote from mark -->
-                            <div class="quote">
+                            <div class="boxxed quote">
                                     {{ config["SURVIVAL_TEXT"] }}
 		                    </div>
 			    <img src="{{ config['STORY_VIEW_PICTURE'] }}"

@@ -78,6 +78,8 @@ body{
     width: 50%;
     padding: 10px;
     color: orange;
+    font-family: 'Zen Loop';
+    font-weight: bold;
 }
 
 .spacer{
@@ -88,7 +90,7 @@ body{
 .quote{
     font-size: 30px;
     width: 80%;
-    font-family: Veranda;
+    font-family: 'Zen Loop';
     color: orange;
     display: block;
     margin-left: auto;
@@ -213,6 +215,12 @@ body{
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.hide-on-small{
+  font-family: 'Zen Loop';
+  font-weight: bold;
+  font-size: 30px;
 }
   
 @media(max-width: 874px){
