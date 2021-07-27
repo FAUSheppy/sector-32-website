@@ -271,25 +271,25 @@ body{
 
 
 .discord-invite{
-    background-color: rgba(47, 49, 54, 0.8);
-    width: 400px;
-    max-width: 400px;
-    height: 200px;
+    background-color: rgb(35, 37, 40);
+    width: 350px;
+    max-width: 350px;
+    height: 180px;
     border-radius: 10px;
 }
 
 .discord-invite-default-text{
     color: #b9bbbe;
     position: relative;
-    top: 30px;
-    left: 30px;
+    top: 20px;
+    left: 20px;
 }
 
 
 .discord-server-picture{
     position: relative;
-    top: 30px;
-    left: 30px; 
+    top: -30px;
+    left: 20px; 
     width: 100px;
     height: 100px;
     border-radius: 10px;
@@ -298,17 +298,36 @@ body{
 
 .discord-community-name{
     position: relative;
-    top: 60px;
+    top: 35px;
     left: 150px;
     color: white;
 }
 
+.discord-online-dot{
+    position: relative;
+    top: 40px;
+    left: 170px;
+    height: 7px;
+    width:  7px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.discord-online{
+    position: relative;
+    top: 22px;
+    left: 190px;
+    color: white;
+    font-size: 12px;
+}
+
 .discord-join-button{
     position: relative;
-    top: -15px;
+    top: -65px;
     left: 150px;
-    width: 220px;
-    height: 40px;
+    width: 140px;
+    height: 30px;
     background-color: #3ba55c;
     border-radius: 10px;
     display: inline-block;
@@ -321,7 +340,7 @@ body{
 
 .discord-join-button-text{
     text-align: center;
-    padding-top: 7px;
+    padding-top: 3px;
     color: white !important;
 }
 
