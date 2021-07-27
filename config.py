@@ -7,7 +7,7 @@ PARALAX_LAYERS = [
                 "https://images.potaris.de/media/layering/L3_with_fog_alpha.png",
                 "https://images.potaris.de/media/layering/L4_with_fog.png"]
 
-SITE_PARRALAX_TITLE = "Decend into Sector 32"
+SITE_PARRALAX_TITLE = "Decent into Sector 32"
 SITE_PARRALAX_SUBTITLE = "Make your decisions"
 
 BG_SECTION_2 = "https://images.potaris.de/media/crystal-sector-no-astroid-header.png?encoding=webp&y=1080"
@@ -16,7 +16,7 @@ BG_SECTION_2 = "https://images.potaris.de/media/crystal-sector-no-astroid-header
 TRAILER_URL="https://m.athq.de/webgl/cap_sample.mp4"
 VIDEO_ENCODING = "video/mp4"
 
-SHORT_DESCRIPTION = "Decend into Sector 32 is a decision-based mystery game, set in the far future. Jump into your ship and decend into  the increasingly dark and hostile environment of Sector 32."
+SHORT_DESCRIPTION = "Decent into Sector 32 is a decision-based mystery game, set in the far future. Jump into your ship and decend into  the increasingly dark and hostile environment of Sector 32."
 
 LONG_DESCRIPTION_LEFT_COL = '''
 You are an aspiring pilot in local security forces - one of the only ways to escape the poor and dangerous outer edges of the galaxy, by getting recruited into the regular navy of the Grand Federation.
