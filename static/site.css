@@ -222,6 +222,13 @@ body{
   font-weight: bold;
   font-size: 30px;
 }
+
+@media(max-width: 1000px){
+    .video{
+	height: unset;
+	width: 90%;
+    }
+}
   
 @media(max-width: 874px){
     .img-double-size{
