@@ -231,6 +231,12 @@ body{
 }
   
 @media(max-width: 874px){
+
+    /* mostly for performance reasons */
+    .parallax__layer__3 {
+	display: none;
+    }
+
     .img-double-size{
 	max-width: 90%;
     }
