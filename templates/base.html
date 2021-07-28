@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body style="background-image: url(https://images.potaris.de/media/layering/L4_with_fog.png?x=1920&y=1080&encoding=webp); height: 100vh; background-size: cover;">
         
         <!-- {% include 'navbar.html' %} -->
         <div class="parallax">
@@ -22,6 +22,7 @@
                 <div class="parallax__layer parallax__layer__3">
                         <img style="width: 100%;" src="{{ config['PARALAX_LAYERS'][3] }}">
                 </div>
+		<!--
                 <div style="max-height: 100vh; overflow-y: hidden;"
 			class="parallax__layer parallax__layer__5">
                         <img style="width: 100%;
@@ -29,10 +30,11 @@
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0) 95%);"
 			src="{{ config['PARALAX_LAYERS'][4] }}">
 
-			<!-- small display helper -->
                         <img class="small-display-only" style="width: 100%;" 
 				src="{{ config['PARALAX_LAYERS'][4] }}">
                 </div>
+		-->
+
                 <div class="parallax-title" id="parallax-title">
                         {{ config["SITE_PARRALAX_TITLE"] }} <br>
                         <div class="parallax-subtitle">
