@@ -75,7 +75,8 @@ body{
     margin-bottom: 30px;
     margin-top: 30px;
     border-radius: 5px;
-    width: 50%;
+    width: 80%;
+    max-width: 800px;
     padding: 10px;
     color: orange;
     font-family: 'Zen Loop';
@@ -112,7 +113,8 @@ body{
 }
 
 .limit-row{
-    width: 60%;
+    width: 80%;
+    max-width: 800px;
     border-radius: 5px;
     background-color: rgba(1,1,1,0.75);
     color: orange;
