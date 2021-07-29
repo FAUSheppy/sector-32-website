@@ -10,7 +10,6 @@ function onImgClick(click){
     $('#bigPicModal').on('hidden.bs.modal', function (e) {
         imageContainer = document.getElementById("modal-image")
         imageContainer.setAttribute("src", "")
-        console.log("lol")
     })
 
     $('#bigPicModal').modal("toggle")
