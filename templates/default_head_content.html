@@ -21,3 +21,21 @@
 <script src="static/bootstrap/js/popper.js"></script>
 <script src="static/bootstrap/js/mdb.min.js"></script>
 -->
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ config['SITE_TITLE'] }}" />
+<meta property="og:description" content="{{ config['SITE_DESCRIPTION']  }}" />
+<meta property="og:url" content="{{ url_for(request.endpoint) }}" />
+<meta property="og:image" content="{{ config['SITE_LOGO_URL'] }}">
+
+<script defer src="/static/lazyload.js"></script>
+
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "{{ config['SITE_BASE_URL'] }}",
+      "logo": "{{ config['SITE_LOGO_URL'] }}"
+    }
+</script>
