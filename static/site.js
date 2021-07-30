@@ -16,7 +16,7 @@ function onImgClick(click){
 }
 
 function addImgClickListeners(){
-    images = document.getElementsByClassName('quater-img')
+    images = document.getElementsByClassName('img-clickable')
     for(i in images){
         try{
             images[i].addEventListener("click", onImgClick)
