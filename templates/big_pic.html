@@ -1,11 +1,12 @@
 <div class="modal" id="bigPicModal" tabindex="-1" 
 	role="dialog" aria-labelledby="bigPicModalTitle" aria-hidden="true">
 
-  <div class="modal-dialog-centered modal-big-pic" role="document">
+  <div class="modal-dialog-centered modal-big-pic" role="document"
+	style="z-index: 10;">
 
       <div class="modal-body">
         <button type="button" class="close" onclick="$('#bigPicModal').modal('toggle')"
-                aria-label="Close">
+                aria-label="Close" style="color: white;">
           <span aria-hidden="true">&times;</span>
         </button>
         <img class="w-100" id="modal-image"></img>

@@ -1,5 +1,5 @@
 SITE_TITLE = "Sector 32"
-SITE_DESCRIPTION = "Play Decent Into Sector 32, a space-SiFi narrative game set in the far future."
+SITE_DESCRIPTION = "Play Decent Into Sector 32, a space-SiFi narrative indie game set in the far future."
 SITE_LOGO_URL = "https://images.potaris.de/media/CrystalSectorFirstLook.png?x=1200"
 
 # parallax layers front to back as URLs #

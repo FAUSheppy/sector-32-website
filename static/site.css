@@ -361,7 +361,7 @@ body{
 
 .modal-big-pic{
    transition: opacity .5s linear;
-   width: 800px;
+   width: 1200px;
    margin-left: auto;
    margin-right: auto;
 }
