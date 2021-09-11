@@ -232,6 +232,10 @@ body{
     }
 }
 
+.steam-small-display{
+	display: none;
+}
+
 @media(max-width: 690px){
     .steam-small-display{
 	padding: 15px;
