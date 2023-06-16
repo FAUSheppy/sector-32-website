@@ -16,4 +16,5 @@ RUN apt remove git -y
 RUN apt autoremove -y
 RUN which waitress-serve
 
-CMD waitress-serve --host 0.0.0.0 --port 5000 --call 'app:createApp'
+ENTRYPOINT ["waitress-serve"]
+CMD ["--host", "0.0.0.0", "--port", "5000", "--call", "app:createApp"]
