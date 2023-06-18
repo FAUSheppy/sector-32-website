@@ -1,7 +1,7 @@
 FROM python:3.8-slim-buster
 
 RUN apt update
-RUN apt install python3-pip git -y
+RUN apt install python3-pip git curl -y
 RUN python3 -m pip install waitress
 RUN python3 -m pip install --upgrade pip
 
