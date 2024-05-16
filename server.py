@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import flask
-import requests
 import argparse
 import datetime
 import itertools
@@ -18,8 +17,7 @@ def leaderboard():
 def send_js(path):
     return send_from_directory('static', path)
 
-@app.before_first_request
-def init():
+def create_app():
     app.config.from_object("config")
     params = "?x=1920&y=1080&encoding=webp"
     for i in range(0, len(app.config["PARALAX_LAYERS"])):
@@ -34,6 +32,9 @@ if __name__ == "__main__":
             help='Port on which flask (this server) will take requests on')
 
     args = parser.parse_args()
+
+    with app.app_context():
+        create_app()
     
     app.config.from_object("config")
 

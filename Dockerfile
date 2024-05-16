@@ -1,20 +1,16 @@
-FROM python:3.8-slim-buster
+FROM alpine
 
-RUN apt update
-RUN apt install python3-pip git curl -y
-RUN python3 -m pip install waitress
-RUN python3 -m pip install --upgrade pip
+RUN apk add --no-cache py3-pip
 
-RUN git clone https://github.com/FAUSheppy/sector-32-website /app
 WORKDIR /app
-RUN python3 -m pip install -r req.txt
+COPY ./ .
 
-HEALTHCHECK CMD --interval=5m --timeout=5s /usr/bin/curl http://localhost:5000/ || exit 1
+RUN python3 -m pip install --no-cache-dir --break-system-packages waitress
+
+COPY req.txt .
+RUN python3 -m pip install --no-cache-dir --break-system-packages -r req.txt
+
 EXPOSE 5000/tcp
 
-RUN apt remove git -y
-RUN apt autoremove -y
-RUN which waitress-serve
-
-ENTRYPOINT ["waitress-serve"]
+ENTRYPOINT ["waitress-serve"] 
 CMD ["--host", "0.0.0.0", "--port", "5000", "--call", "app:createApp"]
