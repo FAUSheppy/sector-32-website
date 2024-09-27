@@ -4,12 +4,13 @@ SITE_LOGO_URL = "https://images.potaris.de/media/CrystalSectorFirstLook.png?x=12
 
 # parallax layers front to back as URLs #
 PARALAX_LAYERS = [
-                "https://images.potaris.de/media/layering/L0_Astroid_alpha.png",
-                #"https://images.potaris.de/media/layering/L0_ship.png",
-                "https://images.potaris.de/media/layering/L1_with_fog_alpha.png",
-                "https://images.potaris.de/media/layering/L2_with_fog_alpha.png",
-                "https://images.potaris.de/media/layering/L3_with_fog_alpha.png",
-                "https://images.potaris.de/media/layering/L4_with_fog.png"]
+    "https://images.potaris.de/media/layering/L0_Astroid_alpha.png",
+    #"https://images.potaris.de/media/layering/L0_ship.png",
+    "https://images.potaris.de/media/layering/L1_with_fog_alpha.png",
+    "https://images.potaris.de/media/layering/L2_with_fog_alpha.png",
+    "https://images.potaris.de/media/layering/L3_with_fog_alpha.png",
+    "https://images.potaris.de/media/layering/L4_with_fog.png"
+]
 
 SITE_PARRALAX_TITLE = "Descent into Sector 32"
 SITE_PARRALAX_SUBTITLE = "Make your decisions"
